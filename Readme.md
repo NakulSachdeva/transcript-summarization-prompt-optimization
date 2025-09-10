@@ -36,6 +36,27 @@ transcript-summarization-prompt-optimization/
 | optimized     | Q2: +20% revenue from launches; costs rose on supply issues; Q3 margins expected to improve.             | 42          | 18           | 0.43              |
 
 
+## Example block
+
+### Example
+
+**Transcript (input):**
+
+
+Alice: Welcome everyone. Today we’ll review Q2 earnings.
+Bob: Revenue increased by 20% year-over-year, driven by new product launches.
+Carol: However, operational costs rose significantly due to supply chain issues.
+Dave: Looking ahead, we expect stronger margins in Q3 as logistics stabilize.
+
+
+**Optimized Prompt Summary (output):**  
+
+
+Q2: +20% revenue from launches; costs rose on supply issues; Q3 margins expected to improve.
+
+This shows the before and after effect at a glance.
+
+
 ## 🛠️ How to Run
 ```bash
 # Clone repo
@@ -47,3 +68,4 @@ pip install -r requirements.txt
 
 # Run summarizer
 python transcript_summarizer.py
+
