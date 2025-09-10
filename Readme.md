@@ -30,15 +30,16 @@ Add your OPENAI_API_KEY in a .env file or environment variable
 
 Execute cells to generate summaries and results
 
-📊 Results
-Tabular Comparison
-prompt_type	output	input_words	output_words	compression_ratio
-direct	Q2 earnings grew 20% driven by new products, but costs rose due to supply chain issues.	42	19	0.45
-bullet_points	- Revenue up 20%
-- Driven by product launches
-- Costs increased from supply chain issues	42	16	0.38
-role_based	As a financial analyst: Q2 growth strong at 20%, though costs surged. Q3 outlook positive as logistics improve.	42	22	0.52
-optimized	Q2: +20% revenue from launches; costs rose on supply issues; Q3 margins expected to improve.	42	18	0.43
+## 📊 Results
+
+### Tabular Comparison
+
+| prompt_type   | output                                                                                                   | input_words | output_words | compression_ratio |
+|---------------|----------------------------------------------------------------------------------------------------------|-------------|--------------|-------------------|
+| direct        | Q2 earnings grew 20% driven by new products, but costs rose due to supply chain issues.                  | 42          | 19           | 0.45              |
+| bullet_points | - Revenue up 20% <br> - Driven by product launches <br> - Costs increased from supply chain issues        | 42          | 16           | 0.38              |
+| role_based    | As a financial analyst: Q2 growth strong at 20%, though costs surged. Q3 outlook positive as logistics improve. | 42      | 22           | 0.52              |
+| optimized     | Q2: +20% revenue from launches; costs rose on supply issues; Q3 margins expected to improve.             | 42          | 18           | 0.43              |
 
 📊 Visual Insights
 Compression Ratio by Prompt Type
