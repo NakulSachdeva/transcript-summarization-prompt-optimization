@@ -1,15 +1,48 @@
-# 🎙️ Transcript Summarization with Prompt Optimization
+# 🎯 Transcript Summarization with Prompt Engineering
 
-This project explores LLM-powered summarization of transcripts (meetings, earnings calls, interviews).  
-It demonstrates several prompt strategies, automated evaluation, and token/cost trade-offs.
+This project demonstrates how to use Large Language Models (LLMs) for transcript summarization and **optimize prompt strategies** for accuracy and efficiency.  
+The goal is to explore prompt engineering techniques to generate concise, high-quality summaries of transcripts.
 
-Quick start:
-1. Add your OpenAI API key to `.env` (do not commit it).
-2. Run `notebooks/transcript_summarizer.ipynb` (or open in Google Colab).
 
-Files:
-- `notebooks/transcript_summarizer.ipynb` — notebook to run prompt experiments.
-- `data/transcript_sample.txt` — sample transcript.
-- `requirements.txt` — Python dependencies.
+## 🚀 Features
+- Multiple prompt types: **Direct, Bullet Points, Role-Based, Optimized**
+- Automatic evaluation of outputs:
+  - Input vs. output length
+  - Compression ratio
+- Results saved to CSV for transparency
+- Jupyter Notebook included for exploration
 
-License: MIT
+
+## 📂 Repository Structure
+transcript-summarization-prompt-optimization/
+│── README.md
+│── requirements.txt
+│── transcript_summarizer.py
+│── data/
+│ └── transcript_sample.txt
+│── notebooks/
+│ └── transcript_summarizer.ipynb
+│── results/
+│ └── results.csv
+
+## 📊 Results
+
+| prompt_type   | output                                                                                                   | input_words | output_words | compression_ratio |
+|---------------|----------------------------------------------------------------------------------------------------------|-------------|--------------|-------------------|
+| direct        | Q2 earnings grew 20% driven by new products, but costs rose due to supply chain issues.                  | 42          | 19           | 0.45              |
+| bullet_points | - Revenue up 20% <br> - Driven by product launches <br> - Costs increased from supply chain issues        | 42          | 16           | 0.38              |
+| role_based    | As a financial analyst: Q2 growth strong at 20%, though costs surged. Q3 outlook positive as logistics improve. | 42      | 22           | 0.52              |
+| optimized     | Q2: +20% revenue from launches; costs rose on supply issues; Q3 margins expected to improve.             | 42          | 18           | 0.43              |
+
+
+## 🛠️ How to Run
+```bash
+# Clone repo
+git clone https://github.com/your-username/transcript-summarization-prompt-optimization.git
+cd transcript-summarization-prompt-optimization
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run summarizer
+python transcript_summarizer.py
