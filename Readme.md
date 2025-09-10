@@ -15,15 +15,16 @@ The goal is to explore prompt engineering techniques to generate concise, high-q
 
 ## 📂 Repository Structure
 transcript-summarization-prompt-optimization/
+
 │── README.md
 │── requirements.txt
 │── transcript_summarizer.py
 │── data/
-│ └── transcript_sample.txt
+│── transcript_sample.txt
 │── notebooks/
-│ └── transcript_summarizer.ipynb
+│── transcript_summarizer.ipynb
 │── results/
-│ └── results.csv
+│── results.csv
 
 ## 📊 Results
 
