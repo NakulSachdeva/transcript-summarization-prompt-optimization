@@ -1,0 +1,4 @@
+openai==0.28   # or latest if you updated code
+python-dotenv
+pandas
+matplotlib
